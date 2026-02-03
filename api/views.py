@@ -26,7 +26,7 @@ def create_goal(request):
     if not title:
         return Response({"error": "title required"}, status=status.HTTP_400_BAD_REQUEST)
 
-    goal = Goal.objects.create(user=request.user, title=title)
+    goal, _ = Goal.object.update_or_create(user=request.user, title=title)
     return Response({"message": "goal created", "title": goal.title}, status=status.HTTP_201_CREATED)
 
 @api_view(['GET'])
