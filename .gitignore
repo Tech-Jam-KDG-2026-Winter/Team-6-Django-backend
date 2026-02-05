@@ -1,0 +1,29 @@
+# Python virtual environments and caches
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+.env
+.DS_Store
+
+# Django collected static / build artifacts
+backend/static/app/assets/
+backend/static/app/index.html
+backend/static/app/*.map
+Team-6-react-frontend/dist/
+Team-6-react-frontend/node_modules/
+staticfiles/
+
+# IDE / tooling
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup / temp
+*.bak
+*.tmp
